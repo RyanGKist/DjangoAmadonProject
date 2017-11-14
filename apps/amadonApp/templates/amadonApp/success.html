@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkout</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container-fluid">
+ <h1>Amadon Checkout</h1>
+	</div>
+	<div class="card" style="width: 20rem;">
+  <div class="card-body">
+    <h4 class="card-title">Current Purchase</h4>
+    <h6 class="card-subtitle mb-2 text-muted">Thank you for your business!	</h6>
+    <p class="card-text">We charged your card ${{request.session.current_purchase}}</p>
+    <p class="card-text">You have spent a total of ${{request.session.total}} on {{request.session.items}} items.</p>
+    <a href="/return" class="card-link">Return to Shopping</a>
+    <a href="/clear" class="card-link">Clear Session</a>
+  </div>
+</div>
+</body>
+</html>

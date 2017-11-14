@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Amadon Shopping</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container-fluid">
+ <h1>Amadon Store</h1>
+	</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+    	<h3>Items</h3>
+    	<br>
+		<h6>Dojo T-Shirt</h6>
+		<hr>
+		<h6>Dojo Sweater</h6>
+		<hr>
+		<h6>Dojo Cup</h6>
+		<hr>
+		<h6>Algo Book </h6>
+    </div>
+    <div class="col-sm">
+    	<h3>Price</h3>
+    	<br>
+    	<h6>$19.99</h6>
+    	<hr>
+    	<h6>$29.99</h6>
+    	<hr>
+    	<h6>$4.99</h6>
+    	<hr>
+    	<h6>$49.99</h6>    	
+    </div>
+    <div class="col-sm">
+    	<h3>Quantity</h3>
+    	<br>
+      <form action='/buy' method='post'>
+  			{% csrf_token %}
+ 		 <select name='quantity'>
+     		<option>1</option>
+     		<option>2</option>
+     		<option>3</option>
+ 		 </select>
+  		<input type='hidden' name='price' value='111' />
+  		<input type='submit' value='Buy!' />
+  		<hr>
+		</form>
+		      <form action='/buy' method='post'>
+  			{% csrf_token %}
+ 		 <select name='quantity'>
+     		<option>1</option>
+     		<option>2</option>
+     		<option>3</option>
+ 		 </select>
+  		<input type='hidden' name='price' value='222' />
+  		<input type='submit' value='Buy!' />
+  		<hr>
+		</form>
+		      <form action='/buy' method='post'>
+  			{% csrf_token %}
+ 		 <select name='quantity'>
+     		<option>1</option>
+     		<option>2</option>
+     		<option>3</option>
+ 		 </select>
+  		<input type='hidden' name='price' value='333' />
+  		<input type='submit' value='Buy!' />
+  		<hr>
+		</form>
+		      <form action='/buy' method='post'>
+  			{% csrf_token %}
+ 		 <select name='quantity'>
+     		<option>1</option>
+     		<option>2</option>
+     		<option>3</option>
+ 		 </select>
+  		<input type='hidden' name='price' value='444' />
+  		<input type='submit' value='Buy!' />
+  		<hr>
+		</form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
